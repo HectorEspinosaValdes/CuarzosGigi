@@ -185,3 +185,77 @@ img{
 .widget-curso_inf{
    font-size: 2rem;
 }
+.footer{
+    background-color: var(--gris);
+    padding: 1rem 0 1rem 0;
+    margin-top: 4rem;
+}
+/*-------------------------------------*/
+@media (min-width: 768px){
+    .sobre-nosotros{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 2rem;
+    }
+}
+/*-------------------------------------*/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px){
+     .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+     }
+}
+.curso:last-of-type{
+    border: none;
+}
+
+.curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.curso_label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.curso_inf{
+    font-weight: normal;
+}
+.curso_label,
+.curso_inf{
+    font: size 2rem;
+} 
+
+/*Contacto*/
+.contacto-bg{
+    background-image: url(../img/img6.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%; 
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo_field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo_field-textarea{
+    height: 20rem;
+}
